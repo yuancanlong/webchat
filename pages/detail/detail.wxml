@@ -1,0 +1,19 @@
+<view>
+  <view class="row">
+    <label class="title">我的地址</label>
+    <view  class="info">{{address}}</view>
+  </view>
+  <view class="row">
+    <label class="title">类型
+    <view class="info-type">{{type=="sell"?"出售":"求购"}}</view> 
+    </label>
+  </view>
+  <view class="row">
+    <label class="title">说明</label>
+      {{message}}
+  </view>
+  <view class="row">
+    <label class="title">联系方式</label>
+      {{contact}}
+  </view>
+</view>

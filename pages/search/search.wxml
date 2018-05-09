@@ -1,0 +1,13 @@
+<view class="search-header">
+    <input class="search-input" bindinput="handleInputChange"/>
+   <view class="search-btn" bindtap="handleSearch">搜索</view>
+</view>
+
+<view>
+  <view wx:for="{{list}}" class="item" id="{{item.id}}" bindtap="handleItemTap" wx:key="key">
+    <view class="item-address">
+      {{item.province}}-{{item.city}}-{{item.district}} ({{item.type === "sell"? "转让":"求购"}})
+    </view>
+    <view class="item-contact">{{item.message}}</view>
+  </view>
+</view>
